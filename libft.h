@@ -6,7 +6,7 @@
 /*   By: akalombo <akalombo@42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/03/22 12:17:53 by akalombo          #+#    #+#             */
-/*   Updated: 2019/05/20 13:24:46 by akalombo         ###   ########.fr       */
+/*   Updated: 2019/05/21 11:01:55 by akalombo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ char		*ft_strdup(char *);//works
 int		ft_memcmp(const void *, const void *, size_t); // works
 char		*ft_strncpy(char *, char *, int);//works
 char		*ft_strcat(char *, char *);//works
-char		*ft_strncat(char *, char *, int); //not outputing value 
+char		*ft_strncat(char *, char *, int); //works 
 void		*ft_memset(void *, int, size_t);//works
 void		ft_bzero(void *, size_t); //works
 void *		ft_memalloc(size_t size); //allocates heap memory -> works
