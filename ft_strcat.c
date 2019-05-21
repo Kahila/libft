@@ -6,7 +6,7 @@
 /*   By: akalombo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/18 13:40:56 by akalombo          #+#    #+#             */
-/*   Updated: 2019/05/21 08:57:44 by akalombo         ###   ########.fr       */
+/*   Updated: 2019/05/21 10:50:51 by akalombo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,7 @@ char*			ft_strcat(char *s1, char *s2)
 {
 	int i;
 
-	int len = ft_strlen(s1);
-   	int totlen = ft_strlen(s2) + len;	
+	int len = ft_strlen(s1);	
 	i = 0;
 	while (s2[i] != '\0')
 	{
