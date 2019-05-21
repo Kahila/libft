@@ -6,7 +6,7 @@
 /*   By: akalombo <akalombo@42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/03/22 12:17:53 by akalombo          #+#    #+#             */
-/*   Updated: 2019/05/21 11:01:55 by akalombo         ###   ########.fr       */
+/*   Updated: 2019/05/21 16:14:30 by akalombo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,8 @@
 #include <string.h>
 
 int		ft_strlen(char *); // works
-void		*ft_memcpy(void *, const void *, size_t);
+void		*ft_memcpy(void *, const void *, size_t);//works
+void		*ft_memccpy(void *, const void *, int, size_t);// does not stop outputing at spacified value
 char		*ft_strcpy(char *, char *);//works  
 void		ft_putchar(char);//works
 void		ft_putstr(char *);// works
@@ -26,6 +27,7 @@ int		ft_memcmp(const void *, const void *, size_t); // works
 char		*ft_strncpy(char *, char *, int);//works
 char		*ft_strcat(char *, char *);//works
 char		*ft_strncat(char *, char *, int); //works 
+char		*ft_strchr(const char *, int);
 void		*ft_memset(void *, int, size_t);//works
 void		ft_bzero(void *, size_t); //works
 void *		ft_memalloc(size_t size); //allocates heap memory -> works
