@@ -1,30 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcat.c                                        :+:      :+:    :+:   */
+/*   ft_strchr.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: akalombo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/18 13:40:56 by akalombo          #+#    #+#             */
-/*   Updated: 2019/05/21 16:44:55 by akalombo         ###   ########.fr       */
+/*   Created: 2019/05/21 15:02:13 by akalombo          #+#    #+#             */
+/*   Updated: 2019/05/21 16:42:36 by akalombo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <string.h>
+#include <stdio.h>
 
-char*			ft_strncat(char *s1, char *s2, int l)
+char *ft_strchr(const char *str, int c)
 {
-	int i;
-
-	int len = ft_strlen(s1);	
-	i = 0;
-	while (l > 0)
+	int found = 0;
+	while (*str++)
 	{
-		s1[len + i] = s2[i];
-		i++;
-		l--;
-	}
-	s1[len + i] = '\0';
-	
-	return (s1);
+		if(*str == (char)c)
+		{
+			found = 1;
+			break;
+		}
+	} 
+	if (found  == 0)
+		return (0);
+	else
+		return (char *)(str);
+}
+
+int main()
+{
+	char name[30] = "adonis";
+	printf("%s\n", strchr(name, 's'));
+	printf("%s\n", ft_strchr(name, 's'));
+	return (0);
 }
