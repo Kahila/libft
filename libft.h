@@ -6,7 +6,7 @@
 /*   By: akalombo <akalombo@42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/03/22 12:17:53 by akalombo          #+#    #+#             */
-/*   Updated: 2019/05/23 11:09:59 by akalombo         ###   ########.fr       */
+/*   Updated: 2019/05/23 11:37:45 by akalombo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,8 @@ char		*ft_strncpy(char *, char *, int);//works
 char		*ft_strcat(char *, char *);//works
 char		*ft_strncat(char *, char *, int); //works 
 char		*ft_strchr(const char *, int);//works
-int		ft_strcmp(const char *, const char*);
+int		ft_strcmp(const char *, const char*);//works
+int		ft_strncmp(const char*, const char*, size_t);//works
 char		*ft_strrchr(const char *, int);//works
 void		*ft_memset(void *, int, size_t);//works
 void		ft_bzero(void *, size_t); //works
