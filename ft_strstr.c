@@ -6,7 +6,7 @@
 /*   By: akalombo <akalombo@42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/22 14:17:08 by akalombo          #+#    #+#             */
-/*   Updated: 2019/05/23 05:12:58 by akalombo         ###   ########.fr       */
+/*   Updated: 2019/05/23 06:04:32 by akalombo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,6 @@
 
     if (*needle == '\0')
         return (char *)(haystack);
-    return (0);
 
      while (*haystack != '\0')
      {
@@ -34,5 +33,5 @@
              return ((char *)haystack);
          haystack++;
      }
+     return (0);
  }
-
