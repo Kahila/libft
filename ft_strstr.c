@@ -6,7 +6,7 @@
 /*   By: akalombo <akalombo@42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/22 14:17:08 by akalombo          #+#    #+#             */
-/*   Updated: 2019/05/23 02:13:49 by akalombo         ###   ########.fr       */
+/*   Updated: 2019/05/23 05:12:58 by akalombo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,13 @@
   
  char               *ft_strstr(const char *haystack, const char *needle)
  {
-     const char *s1;
-     const char *s2;
- 
+    const char *s1;
+    const char *s2;
+
+    if (*needle == '\0')
+        return (char *)(haystack);
+    return (0);
+
      while (*haystack != '\0')
      {
          s1 = haystack;
@@ -27,11 +31,8 @@
              s2++;
          }
          if (*s2 == '\0')
-             return ((char*)haystack);
+             return ((char *)haystack);
          haystack++;
      }
-     if (*needle == '\0')
-             return (char *)(haystack);
-     return (0);
  }
 
