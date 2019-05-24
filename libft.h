@@ -6,7 +6,7 @@
 /*   By: akalombo <akalombo@42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/03/22 12:17:53 by akalombo          #+#    #+#             */
-/*   Updated: 2019/05/24 13:35:13 by akalombo         ###   ########.fr       */
+/*   Updated: 2019/05/24 14:41:05 by akalombo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,7 @@ char		*ft_strncat(char *, char *, int); //works
 char		*ft_strchr(const char *, int);//works
 int		ft_atoi(const char *str);//works
 int		ft_isalpha(int);//works
+int		ft_isdigit(int);//works
 int		ft_strcmp(const char *, const char*);//works
 int		ft_strncmp(const char*, const char*, size_t);//works
 char		*ft_strrchr(const char *, int);//works
