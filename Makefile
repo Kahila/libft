@@ -6,7 +6,7 @@
 #    By: akalombo <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/05/20 10:57:08 by akalombo          #+#    #+#              #
-#    Updated: 2019/05/20 15:02:32 by akalombo         ###   ########.fr        #
+#    Updated: 2019/05/24 13:39:14 by akalombo         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -28,9 +28,9 @@ $(NAME):
 	ranlib $(NAME)
 
 clean:
-	/bin/rm -f $(OBJ)
+	rm -f $(OBJ)
 
 fclean: clean
-	/bin/rm -f $(NAME)
+	rm -f $(NAME)
 
 re: fclean all
