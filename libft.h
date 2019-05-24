@@ -6,7 +6,7 @@
 /*   By: akalombo <akalombo@42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/03/22 12:17:53 by akalombo          #+#    #+#             */
-/*   Updated: 2019/05/24 15:56:10 by akalombo         ###   ########.fr       */
+/*   Updated: 2019/05/24 16:29:39 by akalombo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,8 @@ int		ft_isalnum(int);//works
 int		ft_isascii(int);//works
 int		ft_isdigit(int);//works
 int		ft_isprint(int);//works
+int		ft_toupper(int);//works
+int		ft_tolower(int);//works
 int		ft_strcmp(const char *, const char*);//works
 int		ft_strncmp(const char*, const char*, size_t);//works
 char		*ft_strrchr(const char *, int);//works
