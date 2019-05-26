@@ -6,7 +6,7 @@
 /*   By: akalombo <akalombo@42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/03/22 12:17:53 by akalombo          #+#    #+#             */
-/*   Updated: 2019/05/25 11:27:43 by akalombo         ###   ########.fr       */
+/*   Updated: 2019/05/26 09:30:25 by akalombo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,8 @@
 
 int		ft_strlen(char *); // works
 void		*ft_memcpy(void *, const void *, size_t);//works
-void		*ft_memchr(const void, int, size_t);
+void		*ft_memchr(const void, int, size_t);//works
+void		*ft_memmove(void *, const void *, size_t),//works
 void		*ft_memccpy(void *, const void *, int, size_t);// does not stop outputing at spacified value
 char		*ft_strcpy(char *, char *);//works  
 void		ft_putchar(char);//works
