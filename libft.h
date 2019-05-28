@@ -6,7 +6,7 @@
 /*   By: akalombo <akalombo@42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/03/22 12:17:53 by akalombo          #+#    #+#             */
-/*   Updated: 2019/05/28 14:03:12 by akalombo         ###   ########.fr       */
+/*   Updated: 2019/05/28 14:37:40 by akalombo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,7 +63,7 @@ char *		ft_strtrim(char const *s);
 char **		ft_strsplit(char const *s, char c);
 char *		ft_itoa(int n);
 void		ft_putchar(char c);
-void		ft_putendl(char const *s);
+void		ft_putendl(char const *s);//works
 void		ft_putnbr(int n);
 void		ft_putchar_fd(char c, int fd);
 void		ft_putstr_fd(char const *s, int fd);
