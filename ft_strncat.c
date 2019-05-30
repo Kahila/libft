@@ -6,19 +6,19 @@
 /*   By: akalombo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/18 13:40:56 by akalombo          #+#    #+#             */
-/*   Updated: 2019/05/21 16:44:55 by akalombo         ###   ########.fr       */
+/*   Updated: 2019/05/30 15:42:36 by akalombo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char*			ft_strncat(char *s1, char *s2, int l)
+char*			ft_strncat(char *s1, char *s2, int  l)
 {
 	int i;
 
 	int len = ft_strlen(s1);	
 	i = 0;
-	while (l > 0)
+	while (l > 0 && s2[i] != '\0')
 	{
 		s1[len + i] = s2[i];
 		i++;
