@@ -6,7 +6,7 @@
 /*   By: akalombo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/19 11:55:01 by akalombo          #+#    #+#             */
-/*   Updated: 2019/05/21 16:45:48 by akalombo         ###   ########.fr       */
+/*   Updated: 2019/05/30 14:22:23 by akalombo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,7 @@ void		*ft_memcpy(void *s1, const void *s2, size_t size)
 	const char *src = s2;
 	while (size--)
 	{
-		*dest = *src;
-		s1++;
-		s2++;	
+		*dest++ = *src++;
 	}
 	return (s1);
 }
