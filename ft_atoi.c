@@ -6,7 +6,7 @@
 /*   By: akalombo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/23 13:12:47 by akalombo          #+#    #+#             */
-/*   Updated: 2019/05/24 12:08:52 by akalombo         ###   ########.fr       */
+/*   Updated: 2019/05/31 15:15:00 by akalombo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,30 +14,19 @@
 
 int				ft_atoi(const char *str)
 {
-	int len = ft_strlen((char *)str);
-	int output = 0;
-	int i = 0;
-	int sign = 0;
-	while (str[i] != '\0' && len >  0)
-	{
-		if ( (str[i + 1] >= '0' && str[i + 1] <= '9') && str[i] == '-')
-		{
-			i++;
-			len--;
-			sign++;
-		}
-
-		if (str[i] >= '0' && str[i] <= '9')
-		{
-			output = (output * 10) + (str[i] - '0');
-			len--;
-			i++;
-		}
-		else
-			break;
-	}
-	if (sign > 0)
-		return (-1 * output);
+	int c = 0;
+	int val = 0;
+	while ((*str >= '\t' && *str <= '\r') || *str == 32)
+		str++;
+	if (*str == '-')
+		c = -1;
 	else
-		return (output);
+		c = 1;
+	if (*str == '+' || *str == '-')
+		str++;
+
+	while  (ft_isdigit(*str) && *str != '\0')
+		val = (val * 10) + (*str++ - '0');
+
+	return (val * c);
 }
