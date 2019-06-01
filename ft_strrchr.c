@@ -6,7 +6,7 @@
 /*   By: akalombo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/21 16:55:04 by akalombo          #+#    #+#             */
-/*   Updated: 2019/05/22 11:56:42 by akalombo         ###   ########.fr       */
+/*   Updated: 2019/06/01 14:38:50 by akalombo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,27 +14,21 @@
 
 char			*ft_strrchr(const char *str, int c)
 {
-	int found = 0;
-	char *str1 = (char *)str;
-	while (*str1)
-	{
-		if (*str1 == (char)c)
-			found++;
-		str1++;
-	}
-	while (*str)
-	{
-		if (*str == (char)c)
-		{
-			if (found == 1)
-				break;
-			else
-				found--;
-		}
-		str++;
-	}
-	if (found == 0)
-		return (0);
-	else
-		return (char *)str;
+	char *found;
+
+    found = 0;
+
+    while (*str)
+    {
+        if (*str == c)
+            found = (char *)str;
+        str++;
+    }
+
+    if (found)
+        return (found);
+    else if(c == '\0')
+        return (char *)str;
+    
+    return (0);
 }
