@@ -6,7 +6,7 @@
 /*   By: akalombo <akalombo@42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/23 05:50:15 by akalombo          #+#    #+#             */
-/*   Updated: 2019/05/23 11:11:08 by akalombo         ###   ########.fr       */
+/*   Updated: 2019/06/01 15:48:26 by akalombo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,12 +17,14 @@ char        *ft_strnstr (const char *haystack, const char *needle, size_t len)
     const char *s1;
     const char *s2;
 
-    if (*needle == '\0' || len  == 0)
+    if (*needle == '\0')
         return (char *)(haystack);
+    else if (len == 0)
+        return (NULL);
 
     while (*haystack != '\0')
     {
-        if (len >= 0)
+        if (len != 0)
         {
             s1 = haystack;
             s2 = needle;
