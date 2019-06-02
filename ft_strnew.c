@@ -6,7 +6,7 @@
 /*   By: akalombo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/18 09:41:32 by akalombo          #+#    #+#             */
-/*   Updated: 2019/05/18 10:57:13 by akalombo         ###   ########.fr       */
+/*   Updated: 2019/06/02 09:54:33 by akalombo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 char*           ft_strnew(size_t size)
 {
     char* str;
-    str = ft_memalloc(size);
+    str = ft_memalloc(size + 1);
     str[ft_strlen(str) + 1] = '\0';
 
     return (str);
