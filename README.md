@@ -1,2 +1,2 @@
 # libft
-Recreating the std lib for c
+Recreating some of the c standard library functions that will help me with my future we think code projects.
