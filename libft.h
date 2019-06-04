@@ -6,7 +6,7 @@
 /*   By: akalombo <akalombo@42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/03/22 12:17:53 by akalombo          #+#    #+#             */
-/*   Updated: 2019/06/01 17:29:42 by akalombo         ###   ########.fr       */
+/*   Updated: 2019/06/03 05:36:10 by akalombo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 #include <string.h>
 
 int		ft_strlen(char *); // works
+int     ft_int_len(long n);//works
 void		*ft_memcpy(void *, const void *, size_t);//works
 void		*ft_memchr(const void *, int, size_t);//works
 void		*ft_memmove(void *, const void *, size_t);//works
