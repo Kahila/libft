@@ -6,7 +6,7 @@
 /*   By: akalombo <akalombo@42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/26 08:17:53 by akalombo          #+#    #+#             */
-/*   Updated: 2019/05/28 10:32:01 by akalombo         ###   ########.fr       */
+/*   Updated: 2019/06/04 06:30:53 by akalombo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,32 +16,21 @@
  
 void    *ft_memmove(void *dst, const void *src, size_t len)
 {
-    char *strsrc;
-    char *strdst;
+    char *src1;
+    char *dst1;
  
-    strsrc = (char*)src;
-    strdst = (char*)dst;
-    if (strsrc < strdst)
+    src1 = (char*)src;
+    dst1 = (char*)dst;
+    if (src1 < dst1)
     {
-        strsrc = strsrc + len - 1;
-        strdst = strdst + len - 1;
+        src1 = src1 + len - 1;
+        dst1 = dst1 + len - 1;
         while (len-- > 0)
-            *strdst-- = *strsrc--;
+            *dst1-- = *src1--;
     }
     else
         while (len-- > 0)
-            *strdst++ = *strsrc++;
+            *dst1++ = *src1++;
  
     return (dst);
-} 
-
-int main()
-{
-	char dst[10];
-	char scr[5] = "Nathi";
-	size_t len;
-	len = 1;
-	printf("System : %s\n" , memmove(dst, scr ,len));
-	printf("ft_memmpove : %s\n", ft_memmove(dst, scr, len));
-	return (0);
 }
