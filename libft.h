@@ -6,7 +6,7 @@
 /*   By: akalombo <akalombo@42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/03/22 12:17:53 by akalombo          #+#    #+#             */
-/*   Updated: 2019/06/05 04:29:56 by akalombo         ###   ########.fr       */
+/*   Updated: 2019/06/05 15:01:09 by akalombo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,7 +60,7 @@ int		ft_strequ(char const *s1, char const *s2);
 int		ft_strnequ(char const *s1, char const *s2,size_t n);
 char *		ft_strsub(char const *s, unsigned int start, size_t len);//works
 char *		ft_strjoin(char const *s1, char const *s2);//works
-char *		ft_strtrim(char const *s);
+char *		ft_strtrim(char const *s);//works
 char **		ft_strsplit(char const *s, char c);
 char *		ft_itoa(int n);//works
 void		ft_putendl(char const *s);//works
