@@ -6,7 +6,7 @@
 /*   By: akalombo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/08 13:43:57 by akalombo          #+#    #+#             */
-/*   Updated: 2019/06/08 15:07:33 by akalombo         ###   ########.fr       */
+/*   Updated: 2019/06/08 15:16:09 by akalombo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,11 +17,11 @@ int				ft_strnequ(char const *s1, char const *s2, size_t n)
 	unsigned int len;
 	unsigned int len1;
 	unsigned int i;
+
 	i = 0;
 	len = ft_strlen((char *)s1);
 	len1 = ft_strlen((char *)s2);
-
-	while(n != 0 && (*s1 != '\0' || *s2 != '\0'))
+	while (n != 0 && (*s1 != '\0' || *s2 != '\0'))
 	{
 		if (*s1 == *s2)
 			i++;
@@ -30,7 +30,6 @@ int				ft_strnequ(char const *s1, char const *s2, size_t n)
 		n--;
 		s1++;
 		s2++;
-	}	
-
+	}
 	return (1);
 }
