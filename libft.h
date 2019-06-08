@@ -6,7 +6,7 @@
 /*   By: akalombo <akalombo@42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/03/22 12:17:53 by akalombo          #+#    #+#             */
-/*   Updated: 2019/06/05 15:01:09 by akalombo         ###   ########.fr       */
+/*   Updated: 2019/06/08 15:08:43 by akalombo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,8 +56,8 @@ void		ft_striter(char *s, void (*f)(char *));//works
 void		ft_striteri(char *s, void (*f)(unsigned int, char *));//works
 char *		ft_strmap(char const *s, char (*f)(char));//works
 char *		ft_strmapi(char const *s, char(*f)(unsigned int, char));//works
-int		ft_strequ(char const *s1, char const *s2);
-int		ft_strnequ(char const *s1, char const *s2,size_t n);
+int		ft_strequ(char const *s1, char const *s2);//works
+int		ft_strnequ(char const *s1, char const *s2,size_t n);//works
 char *		ft_strsub(char const *s, unsigned int start, size_t len);//works
 char *		ft_strjoin(char const *s1, char const *s2);//works
 char *		ft_strtrim(char const *s);//works
@@ -69,5 +69,7 @@ void		ft_putchar_fd(char c, int fd);//works
 void		ft_putstr_fd(char const *s, int fd);//works
 void		ft_putendl_fd(char const *s, int fd);//works
 void		ft_putnbr_fd(int n, int fd);//works
+char *		ft_shake_n_bake_(char const *str, unsigned char bake);//works
+
 
 #endif
