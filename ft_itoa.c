@@ -6,7 +6,7 @@
 /*   By: akalombo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/29 11:22:42 by akalombo          #+#    #+#             */
-/*   Updated: 2019/06/04 06:18:54 by akalombo         ###   ########.fr       */
+/*   Updated: 2019/06/10 14:15:18 by akalombo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	*ft_itoa(int n)
 {
-	char *str;
+	char	*str;
 	long	num;
 	int		i;
 
