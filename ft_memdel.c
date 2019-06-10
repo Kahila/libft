@@ -6,14 +6,14 @@
 /*   By: akalombo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/18 09:32:36 by akalombo          #+#    #+#             */
-/*   Updated: 2019/05/20 13:19:19 by akalombo         ###   ########.fr       */
+/*   Updated: 2019/06/10 14:05:11 by akalombo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void            ft_memdel(void **ap)
+void			ft_memdel(void **s)
 {
-    free (*ap);
-    *ap = NULL;
+	free(*s);
+	*s = NULL;
 }
