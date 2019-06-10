@@ -6,14 +6,14 @@
 /*   By: akalombo <akalombo@42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/16 14:03:21 by akalombo          #+#    #+#             */
-/*   Updated: 2019/04/16 14:12:23 by akalombo         ###   ########.fr       */
+/*   Updated: 2019/06/10 13:51:56 by akalombo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void            ft_strdel(char **as)
+void			ft_strdel(char **as)
 {
-    free(*as);
-    *as = NULL;
+	free(*as);
+	*as = NULL;
 }
