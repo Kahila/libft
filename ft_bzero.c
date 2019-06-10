@@ -6,7 +6,7 @@
 /*   By: akalombo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/17 11:18:58 by akalombo          #+#    #+#             */
-/*   Updated: 2019/05/20 13:17:30 by akalombo         ###   ########.fr       */
+/*   Updated: 2019/06/10 14:22:17 by akalombo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,5 @@
 
 void		ft_bzero(void *s, size_t size)
 {
-	ft_memset (s, '\0', size);
+	ft_memset(s, '\0', size);
 }
