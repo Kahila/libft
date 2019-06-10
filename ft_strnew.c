@@ -6,19 +6,17 @@
 /*   By: akalombo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/18 09:41:32 by akalombo          #+#    #+#             */
-/*   Updated: 2019/06/02 09:54:33 by akalombo         ###   ########.fr       */
+/*   Updated: 2019/06/10 12:49:16 by akalombo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char*           ft_strnew(size_t size)
+char		*ft_strnew(size_t size)
 {
-    char* str;
-    str = ft_memalloc(size + 1);
-    str[ft_strlen(str) + 1] = '\0';
+	char *str;
 
-    return (str);
+	str = ft_memalloc(size + 1);
+	str[ft_strlen(str) + 1] = '\0';
+	return (str);
 }
-
-
