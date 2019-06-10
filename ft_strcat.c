@@ -6,17 +6,18 @@
 /*   By: akalombo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/18 13:40:56 by akalombo          #+#    #+#             */
-/*   Updated: 2019/05/21 16:45:09 by akalombo         ###   ########.fr       */
+/*   Updated: 2019/06/10 09:03:01 by akalombo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char*			ft_strcat(char *s1, char *s2)
+char			*ft_strcat(char *s1, char *s2)
 {
 	int i;
+	int len;
 
-	int len = ft_strlen(s1);	
+	len = ft_strlen(s1);
 	i = 0;
 	while (s2[i] != '\0')
 	{
@@ -24,6 +25,5 @@ char*			ft_strcat(char *s1, char *s2)
 		i++;
 	}
 	s1[i + len] = '\0';
-
 	return (s1);
 }
