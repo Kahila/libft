@@ -6,14 +6,14 @@
 /*   By: akalombo <akalombo@42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/16 00:48:20 by akalombo          #+#    #+#             */
-/*   Updated: 2019/04/16 11:58:15 by akalombo         ###   ########.fr       */
+/*   Updated: 2019/06/10 09:41:10 by akalombo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void            ft_striter(char *s, void(*f)(char*))
+void			ft_striter(char *s, void (*f)(char*))
 {
-    while (*s != '\0')
-        (f)(s++);
+	while (*s != '\0')
+		(f)(s++);
 }
