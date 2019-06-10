@@ -6,17 +6,19 @@
 /*   By: akalombo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/24 16:27:39 by akalombo          #+#    #+#             */
-/*   Updated: 2019/05/30 16:15:18 by akalombo         ###   ########.fr       */
+/*   Updated: 2019/06/10 11:27:45 by akalombo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int				ft_tolower(int ch)
+int			ft_tolower(int ch)
 {
-	char c = (char)(ch);
+	char c;
+
+	c = (char)(ch);
 	if (c >= 'A' && c <= 'Z')
-		return ((ch  + 7) + 25);
+		return ((ch + 7) + 25);
 	else
 		return ((c));
 }
