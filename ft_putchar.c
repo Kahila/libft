@@ -6,13 +6,13 @@
 /*   By: akalombo <akalombo@42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/03/12 11:51:52 by akalombo          #+#    #+#             */
-/*   Updated: 2019/04/10 01:28:35 by akalombo         ###   ########.fr       */
+/*   Updated: 2019/06/10 14:09:42 by akalombo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void                ft_putchar(char c)
+void			ft_putchar(char c)
 {
-    write(1, &c, 1);
+	write(1, &c, 1);
 }
