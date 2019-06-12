@@ -6,7 +6,7 @@
 /*   By: akalombo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/05 08:15:33 by akalombo          #+#    #+#             */
-/*   Updated: 2019/06/10 11:18:59 by akalombo         ###   ########.fr       */
+/*   Updated: 2019/06/12 15:15:38 by akalombo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,43 +14,29 @@
 
 char				*ft_strtrim(char const *str)
 {
-	char	*s;
-	char	*str1;
-	char	*rev;
-	char	*new;
+	int		c;
+	int		l;
 	int		len;
-	int		count;
+	char	*new;
 
-	count = 0;
-	s = (char *)str;
-	len = 0;
-	while ((*s == '\t' || *s == '\n' || *s == ' ') && *s != '\0')
-	{
-		s++;
-		count++;
-	}
-	str1 = (char *)s;
-	count = ft_strlen(str1);
-	rev = ft_memalloc(count);
-	count--;
-	while (count >= 0)
-	{
-		rev[len] = str1[count];
-		count--;
-		len++;
-	}
-	rev[len] = '\0';
-	while ((*rev == ' ' || *rev == '\t' || *rev == '\n'))
-		rev++;
-	s = rev;
-	len = ft_strlen(s);
-	new = ft_memalloc(len);
-	while (len >= 0)
-	{
-		new[count] = s[len];
+	len = ft_strlen((char *)str);
+	len--;
+	while ((str[len] == '\t' || str[len] == '\n' || str[len] == ' ') && len > 0)
 		len--;
-		count++;
+	l = 0;
+	while (str[l] == '\t' || str[l] == '\n' || str[l] == ' ')
+		l++;
+	new = ft_memalloc(len);
+	if (len > 0)
+	{
+		c = 0;
+		while (l <= (len) && len != 0)
+		{
+			new[c] = str[l];
+			l++;
+			c++;
+		}
+		new[c] = '\0';
 	}
-	new[count] = '\0';
 	return (new);
 }
