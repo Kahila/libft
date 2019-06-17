@@ -6,17 +6,18 @@
 /*   By: akalombo <akalombo@42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/16 19:08:17 by akalombo          #+#    #+#             */
-/*   Updated: 2019/06/16 19:13:43 by akalombo         ###   ########.fr       */
+/*   Updated: 2019/06/17 08:59:49 by akalombo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int     ft_find_len(const char *s, char c)
+int				ft_find_len(const char *s, char c)
 {
-    int     len;
+	size_t		len;
 
-    while (*s++ != c && *s != '\0')
-        len++;
-    return (len);
+	len = 0;
+	while (*s++ != c && *s != '\0')
+		len++;
+	return (len);
 }
