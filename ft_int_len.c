@@ -6,7 +6,7 @@
 /*   By: akalombo <akalombo@42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/03 05:30:30 by akalombo          #+#    #+#             */
-/*   Updated: 2019/06/17 09:06:43 by akalombo         ###   ########.fr       */
+/*   Updated: 2019/06/18 08:38:06 by akalombo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,18 +14,10 @@
 
 int				ft_int_len(long n)
 {
-	int	len;
+	size_t	len;
 
-	len = 0;
-	if (n < 0)
-	{
-		n = n * -1;
+	len = 1;
+	while (n /= 10)
 		len++;
-	}
-	while (n > 0)
-	{
-		n = n / 10;
-		len++;
-	}
 	return (len);
 }
