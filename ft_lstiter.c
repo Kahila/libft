@@ -6,13 +6,13 @@
 /*   By: akalombo <akalombo@42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/18 04:46:28 by akalombo          #+#    #+#             */
-/*   Updated: 2019/06/18 04:49:56 by akalombo         ###   ########.fr       */
+/*   Updated: 2019/06/18 09:13:58 by akalombo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	    ft_lstiter(t_list *lst, void (*f)(t_list *elem))
+void		ft_lstiter(t_list *lst, void (*f)(t_list *elem))
 {
 	if (lst && f)
 	{

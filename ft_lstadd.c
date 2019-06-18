@@ -6,13 +6,13 @@
 /*   By: akalombo <akalombo@42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/18 04:50:45 by akalombo          #+#    #+#             */
-/*   Updated: 2019/06/18 04:51:42 by akalombo         ###   ########.fr       */
+/*   Updated: 2019/06/18 09:11:25 by akalombo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void    	ft_lstadd(t_list **alst, t_list *new)
+void		ft_lstadd(t_list **alst, t_list *new)
 {
 	if (*alst != NULL)
 		new->next = *alst;
