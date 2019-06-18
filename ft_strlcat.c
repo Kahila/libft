@@ -6,7 +6,7 @@
 /*   By: akalombo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/28 10:05:48 by akalombo          #+#    #+#             */
-/*   Updated: 2019/06/14 08:59:35 by akalombo         ###   ########.fr       */
+/*   Updated: 2019/06/18 10:41:01 by akalombo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ size_t			ft_strlcat(char *dst, const char *src, size_t size)
 	size_t	l1;
 	size_t	l2;
 
+	if (size == 0)
+		return (0);
 	l1 = 0;
 	l2 = ft_strlen((char *)src);
 	while (*dst && size > 0)
