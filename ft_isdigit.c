@@ -6,17 +6,14 @@
 /*   By: akalombo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/24 13:44:21 by akalombo          #+#    #+#             */
-/*   Updated: 2019/06/10 10:44:14 by akalombo         ###   ########.fr       */
+/*   Updated: 2019/06/17 10:01:26 by akalombo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int				ft_isdigit(int ch)
+int				ft_isdigit(int c)
 {
-	char c;
-
-	c = (char)(ch);
 	if (c >= '0' && c <= '9')
 		return (2048);
 	else
