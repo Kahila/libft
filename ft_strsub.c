@@ -6,7 +6,7 @@
 /*   By: akalombo <akalombo@42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/05 01:58:21 by akalombo          #+#    #+#             */
-/*   Updated: 2019/06/10 11:01:08 by akalombo         ###   ########.fr       */
+/*   Updated: 2019/06/18 09:07:16 by akalombo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,15 +15,21 @@
 char		*ft_strsub(char const *s, unsigned int start, size_t len)
 {
 	char	*new;
-	int		size;
+	int		k;
 
-	size = ft_strlen((char *)s) - (start);
-	new = ft_memalloc(size);
-	while (start != 0 && *s != '\0')
+	k = 0;
+	if (!s)
+		return (NULL);
+	new = (char *)malloc((len + 1) * sizeof(char));
+	if (!new)
+		return (NULL);
+	while (len > 0)
 	{
-		start--;
-		s++;
+		new[k] = s[start];
+		len--;
+		start++;
+		k++;
 	}
-	ft_strncpy(new, (char *)s, (int)len);
+	new[k] = '\0';
 	return (new);
 }

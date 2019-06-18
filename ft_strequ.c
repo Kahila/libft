@@ -6,7 +6,7 @@
 /*   By: akalombo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/08 12:59:55 by akalombo          #+#    #+#             */
-/*   Updated: 2019/06/10 09:06:33 by akalombo         ###   ########.fr       */
+/*   Updated: 2019/06/17 13:19:04 by akalombo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ int			ft_strequ(char const *s1, char const *s2)
 	int len1;
 	int i;
 
+	if (!s1 || !s2)
+		return (0);
 	i = 0;
 	len = ft_strlen((char *)s1);
 	len1 = ft_strlen((char *)s2);

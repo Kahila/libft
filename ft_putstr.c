@@ -6,7 +6,7 @@
 /*   By: akalombo <akalombo@42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/03/12 11:54:24 by akalombo          #+#    #+#             */
-/*   Updated: 2019/06/10 13:59:12 by akalombo         ###   ########.fr       */
+/*   Updated: 2019/06/18 08:53:21 by akalombo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ void			ft_putstr(char *str)
 {
 	int counter;
 
+	if (!str)
+		return ;
 	counter = 0;
 	while (str[counter] != '\0')
 	{

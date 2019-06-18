@@ -6,7 +6,7 @@
 /*   By: akalombo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/18 09:34:16 by akalombo          #+#    #+#             */
-/*   Updated: 2019/06/10 13:56:01 by akalombo         ###   ########.fr       */
+/*   Updated: 2019/06/17 10:11:48 by akalombo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,9 @@ char			*ft_strdup(char *str)
 	char	*strdup;
 	int		i;
 
-	strdup = ft_memalloc(ft_strlen(str));
+	strdup = ft_memalloc(ft_strlen(str) + 1);
+	if (strdup == NULL)
+		return (NULL);
 	i = 0;
 	while (str[i] != '\0')
 	{

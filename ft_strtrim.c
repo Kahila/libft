@@ -6,7 +6,7 @@
 /*   By: akalombo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/05 08:15:33 by akalombo          #+#    #+#             */
-/*   Updated: 2019/06/12 15:15:38 by akalombo         ###   ########.fr       */
+/*   Updated: 2019/06/18 09:08:37 by akalombo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,29 +14,29 @@
 
 char				*ft_strtrim(char const *str)
 {
-	int		c;
-	int		l;
-	int		len;
+	int		end;
 	char	*new;
+	int		j;
 
-	len = ft_strlen((char *)str);
-	len--;
-	while ((str[len] == '\t' || str[len] == '\n' || str[len] == ' ') && len > 0)
-		len--;
-	l = 0;
-	while (str[l] == '\t' || str[l] == '\n' || str[l] == ' ')
-		l++;
-	new = ft_memalloc(len);
-	if (len > 0)
+	if (!str)
+		return (NULL);
+	j = 0;
+	while (*str == ' ' || *str == '\n' || *str == '\t')
+		str++;
+	end = ft_strlen((char *)str) - 1;
+	if (end < 0)
+		return ((char *)str);
+	while (str[end] == ' ' || str[end] == '\t' || str[end] == '\n')
+		end--;
+	new = ft_memalloc(end + 2);
+	if (!new)
+		return (NULL);
+	while (end >= 0 && new != NULL)
 	{
-		c = 0;
-		while (l <= (len) && len != 0)
-		{
-			new[c] = str[l];
-			l++;
-			c++;
-		}
-		new[c] = '\0';
+		new[j] = str[j];
+		j++;
+		end--;
 	}
+	new[j] = '\0';
 	return (new);
 }

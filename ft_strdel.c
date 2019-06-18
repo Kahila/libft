@@ -6,7 +6,7 @@
 /*   By: akalombo <akalombo@42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/16 14:03:21 by akalombo          #+#    #+#             */
-/*   Updated: 2019/06/10 13:51:56 by akalombo         ###   ########.fr       */
+/*   Updated: 2019/06/18 08:55:51 by akalombo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 
 void			ft_strdel(char **as)
 {
+	if (!as)
+		return ;
 	free(*as);
 	*as = NULL;
 }

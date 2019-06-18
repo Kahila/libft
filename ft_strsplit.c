@@ -6,7 +6,7 @@
 /*   By: akalombo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/15 10:56:29 by akalombo          #+#    #+#             */
-/*   Updated: 2019/06/17 08:48:24 by akalombo         ###   ########.fr       */
+/*   Updated: 2019/06/17 15:35:57 by akalombo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char			**ft_strsplit(char const *s, char c)
 	char	**new;
 
 	j = ft_count((char *)s, c) + 1;
-	if (!s || (!(new = (char **)malloc(sizeof(char *) * j))))
+	if (!s || !(new = (char **)malloc(sizeof(char *) * j)) || !c)
 		return (NULL);
 	i = 0;
 	j = 0;

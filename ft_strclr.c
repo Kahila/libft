@@ -6,7 +6,7 @@
 /*   By: akalombo <akalombo@42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/03/31 10:32:11 by akalombo          #+#    #+#             */
-/*   Updated: 2019/06/10 10:53:46 by akalombo         ###   ########.fr       */
+/*   Updated: 2019/06/18 08:55:26 by akalombo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,7 @@
 
 void			ft_strclr(char *s)
 {
+	if (!s)
+		return ;
 	ft_memset(s, '\0', (sizeof(char) * ft_strlen(s) + 1));
 }
