@@ -6,7 +6,7 @@
 /*   By: akalombo <akalombo@42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/16 19:08:17 by akalombo          #+#    #+#             */
-/*   Updated: 2019/06/17 08:59:49 by akalombo         ###   ########.fr       */
+/*   Updated: 2019/06/17 15:39:14 by akalombo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ int				ft_find_len(const char *s, char c)
 {
 	size_t		len;
 
+	if (!s || !c)
+		return (0);
 	len = 0;
 	while (*s++ != c && *s != '\0')
 		len++;
