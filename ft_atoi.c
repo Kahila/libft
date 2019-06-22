@@ -6,7 +6,7 @@
 /*   By: akalombo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/23 13:12:47 by akalombo          #+#    #+#             */
-/*   Updated: 2019/06/18 08:34:43 by akalombo         ###   ########.fr       */
+/*   Updated: 2019/06/22 05:13:54 by akalombo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,20 +14,24 @@
 
 int			ft_atoi(const char *str)
 {
-	int c;
-	int val;
+	int i;
+	int res;
+	int	sign;
 
-	val = 0;
-	c = 0;
-	while ((*str >= '\t' && *str <= '\r') || *str == 32)
-		str++;
-	if (*str == '-')
-		c = -1;
-	else
-		c = 1;
-	if (*str == '+' || *str == '-')
-		str++;
-	while (ft_isdigit(*str) && *str != '\0')
-		val = (val * 10) + (*str++ - '0');
-	return (val * c);
+	i = 0;
+	sign = 1;
+	res = 0;
+	while (str[i] == ' ' || str[i] == '\t' || str[i] == '\n' || str[i] == '\r'
+			|| str[i] == '\f' || str[i] == '\v' || str[i] == '\b')
+		i++;
+	if (str[i] == '-')
+		sign = -1;
+	if (str[i] == '-' || str[i] == '+')
+		i++;
+	while (str[i] >= '0' && str[i] <= '9')
+	{
+		res = (res * 10) + (str[i] - '0');
+		i++;
+	}
+	return (res * sign);
 }
