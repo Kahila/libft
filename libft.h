@@ -6,7 +6,7 @@
 /*   By: akalombo <akalombo@42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/03/22 12:17:53 by akalombo          #+#    #+#             */
-/*   Updated: 2019/06/18 09:33:52 by akalombo         ###   ########.fr       */
+/*   Updated: 2019/06/22 04:58:19 by akalombo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,23 +16,23 @@
 # include <stdlib.h>
 # include <string.h>
 
-int					ft_strlen(char *s);
+size_t				ft_strlen(const char *s);
 int					ft_int_len(long n);
 void				*ft_memcpy(void *s, const void *s1, size_t n);
 void				*ft_memchr(const void *s, int i, size_t n);
 void				*ft_memmove(void *s, const void *s1, size_t n);
 void				*ft_memccpy(void *s, const void *s1, int i, size_t n);
-char				*ft_strcpy(char *s, char *s1);
+char				*ft_strcpy(char *s, const char *s1);
 size_t				ft_strlcat(char *s, const char *s1, size_t n);
 void				ft_putchar(char c);
 void				ft_putstr(char *s);
-char				*ft_strdup(char *s);
+char				*ft_strdup(const char *s);
 char				*ft_strstr(const char *s, const char *s1);
 char				*ft_strnstr(const char *s, const char *s1, size_t n);
 int					ft_memcmp(const void *s, const void *s1, size_t n);
 char				*ft_strncpy(char *s, char *s1, int i);
-char				*ft_strcat(char *s, char *s1);
-char				*ft_strncat(char *s, char *s1, int i);
+char				*ft_strcat(char *s, const char *s1);
+char				*ft_strncat(char *s, const char *s1, size_t i);
 char				*ft_strchr(const char *s, int i);
 int					ft_atoi(const char *str);
 int					ft_find_len(const char *s, char c);
