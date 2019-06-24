@@ -6,7 +6,7 @@
 /*   By: akalombo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/18 11:08:11 by akalombo          #+#    #+#             */
-/*   Updated: 2019/06/24 02:08:19 by akalombo         ###   ########.fr       */
+/*   Updated: 2019/06/24 09:41:35 by akalombo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,4 +32,3 @@ char        *ft_strncpy(char *dest, const char *src, size_t n)
 	dest[i + a] = '\0';
 	return (dest);
 }
-➜

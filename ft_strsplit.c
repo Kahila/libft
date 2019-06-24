@@ -6,7 +6,7 @@
 /*   By: akalombo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/15 10:56:29 by akalombo          #+#    #+#             */
-/*   Updated: 2019/06/17 15:35:57 by akalombo         ###   ########.fr       */
+/*   Updated: 2019/06/24 09:55:55 by akalombo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,6 @@ char			**ft_strsplit(char const *s, char c)
 	if (!s || !(new = (char **)malloc(sizeof(char *) * j)) || !c)
 		return (NULL);
 	i = 0;
-	j = 0;
 	while (*s)
 	{
 		while (*s == c && *s != '\0')
@@ -31,10 +30,10 @@ char			**ft_strsplit(char const *s, char c)
 		{
 			if (!(new[i] = ft_memalloc(ft_find_len(s, c) + 1)))
 				return (NULL);
+			j = 0;
 			while (*s != '\0' && *s != c)
 				new[i][j++] = (char)*s++;
 			new[i++][j] = '\0';
-			j = 0;
 		}
 	}
 	new[i] = NULL;
