@@ -6,7 +6,7 @@
 /*   By: akalombo <akalombo@42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/03/22 12:17:53 by akalombo          #+#    #+#             */
-/*   Updated: 2019/06/24 10:33:16 by akalombo         ###   ########.fr       */
+/*   Updated: 2019/06/24 11:00:02 by akalombo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,7 @@ char				*ft_strncpy(char *s, const char *s1, size_t n);
 char				*ft_strcat(char *s, const char *s1);
 char				*ft_strncat(char *s, const char *s1, size_t i);
 char				*ft_strchr(const char *s, int i);
+char				*ft_search_n_replace(char *str, int ch1, int ch2);
 int					ft_atoi(const char *str);
 int					ft_find_len(const char *s, char c);
 int					ft_isalpha(int i);
